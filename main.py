@@ -31,7 +31,7 @@ def mostrar_tablero(tablero, reveladas, pares_encontrados):
         print(linea)
 
 def obtener_coordenada(mensaje, maximo):
-    """Obtiene una coordenada válida del usuario"""
+    # Obtiene una coordenada válida del usuario
     while True:
         try:
             valor = int(input(mensaje))
@@ -47,8 +47,7 @@ def dificultad():
     print("Encuentra los pares de cartas")
     try:
         menu = input("Elige dificultad: \n1 > fácil,\n2 > medio,\n3 > difícil\n").strip()
-    
-        time.sleep(2)
+        
         if menu == '1':
             tamanio = 4
         elif menu == '2':
